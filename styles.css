@@ -1,11 +1,15 @@
 body {
-  background-color: #0B6BE2;
+  background-color: white;
   margin: 0;
   font-family: Montserrat;
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  padding: 20px;
+}
+
+.wrapper > *:not(.header) {
+  animation: pop-in 2s ease forwards;
+  width: 90vw;
+  max-width: 800px;
 }
 
 * {
@@ -14,6 +18,10 @@ body {
 
 button {
   cursor: pointer;
+}
+
+p {
+  margin-top: 40px;
 }
 
 .button {
@@ -60,26 +68,31 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
+  user-select: none;
 }
 
 .wrapper {
-  padding-top: 100px;
+  background: linear-gradient(165deg, #6BCBFF, #EBFFFF 50%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding: 140px 0px;
   border: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  font-size: 18px;
 }
 
 .toast {
-  width: calc(100% - 20px);
-  max-width: 800px;
   padding: 20px;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: pop-in 2s ease forwards;
   border: 1px solid #D1CE6F;
   border-radius: 5px;
   font-family: Heebo;
