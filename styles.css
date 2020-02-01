@@ -104,7 +104,7 @@ p {
 }
 
 .toast--hide {
-  animation: pop-out 1s ease forwards;
+  animation: pop-out 1s ease forwards !important;
 }
 
 .close {
