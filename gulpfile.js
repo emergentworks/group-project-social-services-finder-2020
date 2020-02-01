@@ -1,7 +1,11 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+const argv = require('yargs').argv
+const isProduction = argv.production
 
-browserSync.init({ server: '.' });
+gulp.task('server', () => {
+  browserSync.init({ server: '.', open: !isProduction});
+})
 
 gulp.task('watch', function() {
   return gulp.watch('*.(html|css|js)', (done) => {
@@ -10,6 +14,7 @@ gulp.task('watch', function() {
     })
 });
 
-gulp.task('server', gulp.series([
+gulp.task('dev', gulp.series([
+  'server',
   'watch',
 ]));
