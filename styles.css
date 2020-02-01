@@ -3,8 +3,9 @@ body {
   margin: 0;
   font-family: Montserrat;
   overflow: hidden;
-display: flex;
+  display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 * {
@@ -41,9 +42,9 @@ button {
   right: 0;
   display: flex;
   align-items: center;
-  padding: 10px 40px;
+  padding: 15px 40px;
   border-bottom: 4px solid #D1CE6F;
-  height: 80px;
+  height: 90px;
   background: white;
   z-index: 100;
 }
@@ -67,7 +68,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
 }
 
 .toast {
@@ -80,7 +80,7 @@ button {
   align-items: center;
   flex-direction: column;
   animation: pop-in 2s ease forwards;
-  border: 2px solid rgb(124, 122, 51);
+  border: 1px solid #D1CE6F;
   border-radius: 5px;
   font-family: Heebo;
   letter-spacing: 2px;
