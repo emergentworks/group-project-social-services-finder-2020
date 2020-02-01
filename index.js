@@ -1,1 +1,3 @@
-console.log('hello world');
+function closeToast() {
+  document.querySelector('.toast').classList.add('toast--hide');
+}
