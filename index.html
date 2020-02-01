@@ -1,16 +1,28 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Heebo:900|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
   <script src="./index.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="headline">
+    <div class="header">
+      <img
+        src="/assets/img/logo.png"
+        class="logo"
+        alt="Living Redemption Youth and Oppurtunity Hub"
+      >
+      <div class="page-title">
+        Civil Servant Locator
+      </div>
+    </div>
+    <div class="toast">
+      <button class="close" onclick="closeToast()"></button>
       <h1>Is this an emergency?</h1>
-      <a href="/emergency">Yes</a>
-      <button>No</button>
+      <a href="/emergency" class="button">Yes</a>
+      <button class="button" onclick="closeToast()">No</button>
     </div>
   </div>
 </body>
