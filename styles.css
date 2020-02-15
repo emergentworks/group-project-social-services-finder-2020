@@ -196,6 +196,7 @@ margin-left: 0px
   border-radius:15px;
   position: relative;
   margin-top: 20px;
+  padding-left: 140px;
 }
 .profile__name {
   width: 100%;
@@ -203,7 +204,6 @@ margin-left: 0px
   margin-bottom: 8px !important;
   font-weight: bold;
   order: 0;
-  padding-left: 140px;
   padding-top: 12px;
 }
 .profile__picture {
@@ -218,7 +218,6 @@ margin-left: 0px
   font-weight: bold;
   margin-bottom: 20px !important;
   margin-right: 20px;
-  padding-left: 140px;
   order: 1;
 }
 
