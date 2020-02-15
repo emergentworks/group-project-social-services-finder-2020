@@ -24,6 +24,12 @@ p {
   margin-top: 40px;
 }
 
+.search-parent {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
