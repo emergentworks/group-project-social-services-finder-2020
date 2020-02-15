@@ -63,12 +63,29 @@ p {
   margin-right: 20px;
 }
 
+.logo:hover {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(225deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
 .page-title {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   user-select: none;
+  font-style: oblique 20deg;
 }
 
 .wrapper {
@@ -145,4 +162,35 @@ p {
     opacity: 0;
     max-height: 0;
   }
+}
+
+.profile {
+  font-size: 13px;
+  margin-left: 10%;
+}
+
+a {
+  color: darkgrey;
+  font-size: 13px
+}
+
+.name {
+  margin-left: 10%;
+  font-style: bold;
+}
+
+.profile__picture {
+  margin-bottom: 0%;
+  margin-left: 8%;
+
+}
+
+.location {
+  margin-bottom: -40px;
+}
+
+.phoneicon {
+height: 19px;
+margin-bottom: -.5%;
+margin-left: 0px
 }
