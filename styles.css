@@ -229,6 +229,7 @@ margin-left: 0px
 
 .profile_description {
   order: 3;
+  width: 100%;
 }
 
 .profile__phone a {
